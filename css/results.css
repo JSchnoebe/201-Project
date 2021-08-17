@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3db2105acc61bf49b93944ef73737d92b48d2526
 * { 
   box-sizing: border-box;
 }
@@ -25,6 +29,7 @@ h2{
 
     font-size: 30px;
     margin: 10px;
+<<<<<<< HEAD
   }
 =======
 div{
@@ -56,3 +61,6 @@ main{
     text-align: center;
 }
 >>>>>>> d10ae7f66cf488fc4e8de44d47ee52ef18b85872
+=======
+  }
+>>>>>>> 3db2105acc61bf49b93944ef73737d92b48d2526
