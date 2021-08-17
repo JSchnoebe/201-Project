@@ -1,0 +1,28 @@
+div{
+    text-align: center;
+    background-color: rgb(92, 38, 38);
+}
+h1{
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+    color: goldenrod;
+}
+a:visited {
+    text-decoration: none;
+    color: hotpink;
+}
+a:hover {
+    color: indigo;
+}
+a:active {
+    color: lawngreen;
+}
+header{
+    text-align: center;
+}
+main{
+    margin-top: 30%;
+    text-align: center;
+}
