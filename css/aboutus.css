@@ -8,7 +8,7 @@ body {
   color: rgb(75, 75, 71);
   padding-bottom: 25px;
   margin-bottom: 25px;
-;
+
   }
 
 h1{
@@ -16,10 +16,11 @@ h1{
     font-size: 60px;
     margin:10px;
     text-align: center;
+    border-bottom: crimson 5px;
   }
-  hr.{
-      width: 4px;
-      color: rgb(224, 64, 64);
+  hr {
+      height: 4px;
+      background-color: rgb(224, 64, 64);
      }
 
 h2{
