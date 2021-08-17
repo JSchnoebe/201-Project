@@ -1,0 +1,27 @@
+* { 
+  box-sizing: border-box;
+}
+body {
+  width: 900px;
+  margin: 0 auto;
+  background-color: rgb(211, 220, 223);
+  color: rgb(75, 75, 71);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+;
+  }
+
+h1{
+    font-family: 'Prompt', sans-serif;
+    font-size: 60px;
+    margin:10px;
+    text-align: center;
+  }
+  
+
+h2{
+    font-family: 'Prompt', sans-serif;
+
+    font-size: 30px;
+    margin: 10px;
+  }
