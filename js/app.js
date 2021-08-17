@@ -11,7 +11,11 @@ console.log('image elements', imageElements);
 // let movieIndex4 = 3;
 // let timesClicked = 0;
 let allGenres = [];
-
+let ratingsArray = [
+  { imageName: 'PG'},
+  {imageName: 'PG-13'},
+  {imageName: 'R'}
+];
 
 function Genre(name, imgsrc, timesClicked) {
   this.name = name;
@@ -73,6 +77,20 @@ function imageWasClicked(event){
   image_x.innerHTML = '';
 
   //add new images
+
+  // console.log('this is the section now. ', image_x);
+  let ratingsImages = document.getElementById('genre');
+  
+  for(let i = 0; i < ratingsArray.length; i++){
+    let rateImage = document.createElement('img');
+    // console.log('this is new image ',rateImage);
+    rateImage.setAttribute('src', 'images/' + ratingsArray[i].imageName + '.png');
+    console.log('new image?',rateImage);
+    rateImage.setAttribute('alt', 'Movie Ratings');
+    ratingsImages.appendChild(rateImage);
+
+  }
+
 
 
 
