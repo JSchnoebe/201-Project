@@ -2,14 +2,10 @@
 console.log('js file is connected');
 
 let imageElements = document.getElementsByClassName('genre');
-console.log('image elements', imageElements);
+// console.log('image elements', imageElements);
 
 // Global Variables
-// let movieIndex1 = 0;
-// let movieIndex2 = 1;
-// let movieIndex3 = 2;
-// let movieIndex4 = 3;
-// let timesClicked = 0;
+
 let allGenres = [];
 let ratingsArray = [
   { imageName: 'PG'},
@@ -20,7 +16,6 @@ let ratingsArray = [
 function Genre(name, imgsrc, timesClicked) {
   this.name = name;
   this.imgsrc = imgsrc;
-
   if (timesClicked) {
     this.timesClicked = timesClicked;
   } else {
@@ -28,15 +23,17 @@ function Genre(name, imgsrc, timesClicked) {
   }
   allGenres.push(this);
 }
-console.log('constructor ',allGenres);
+
+let image;
+// console.log('constructor ',allGenres);
 
 
 let chosenGenreString = localStorage.getItem('picks');
-console.log('genre string', chosenGenreString);
+// console.log('genre string', chosenGenreString);
 
 if(chosenGenreString){
   let arrayOfNotGenreObject = JSON.parse(chosenGenreString);
-  console.log('if condition what is our type ', arrayOfNotGenreObject);
+  // console.log('if condition what is our type ', arrayOfNotGenreObject);
   for(let j = 0; j < arrayOfNotGenreObject.length; j++){
     new Genre(
       arrayOfNotGenreObject[j].name,
@@ -44,12 +41,8 @@ if(chosenGenreString){
       arrayOfNotGenreObject[j].timesClicked
     );
   }
-} 
+}
 // else {
-
-
-
-
 new Genre('comedy', 'images/comedy.jpg');
 new Genre('horror', 'images/blood.jpg');
 new Genre('drama', 'images/drama.png');
@@ -59,59 +52,46 @@ new Genre('action', 'images/karate.png');
 // const ratings = ['PG', 'PG-13', 'R'];
 
 
-
-
-
-
-
 function imageWasClicked(event){
-  // timesClicked++;
-  console.log('something was clicked ', event);
-  console.log('image elements on click', event.srcElement.id);
 
   localStorage.setItem('pickGenre', JSON.stringify(event.srcElement.id));
 
-
-
   let image_x = document.getElementById('genre');
-  console.log('khggh',typeof image_x);
   image_x.innerHTML = '';
-
   //add new images
 
   // console.log('this is the section now. ', image_x);
   let ratingsImages = document.getElementById('genre');
-
+  //loop over the rating images array and create the images
   for(let i = 0; i < ratingsArray.length; i++){
     let rateImage = document.createElement('img');
-    console.log('xxxxxxxxx-this is new image ',rateImage);
     rateImage.setAttribute('src', 'images/' + ratingsArray[i].imageName + '.png');
-    console.log('new image?',rateImage);
     rateImage.setAttribute('alt', 'Movie Ratings');
+    //update the image class name for further seletion
+    rateImage.setAttribute('class', ratingsArray[i].imageName);
     ratingsImages.appendChild(rateImage);
-    // localStorage.setItem('pickRating', JSON.stringify(event.srcElement.id));
-    // console.log('pickRating', pickRating);
 
   }
-
 
   let images = document.getElementsByTagName('img');
   for(let i = 0; i < images.length; i++){
-    let image = images[i];
-    console.log('xxxxxxxxxx-image clicked on line 100', image);
-    
-    image.onclick = function(event) {
-  
+    image = images[i];
+    console.log('images in for loop', image);
+    image.onclick = function() {
+
+      console.log(image.className);
+      localStorage.setItem('pickRatingImageClick', JSON.stringify(image.className));
+
       window.location.href = this.id + 'results.html';
     };
   }
- 
+
 
 
 
   for(let i = 0; i < imageElements.length; i++){
     imageElements[i].removeEventListener('click', imageWasClicked);
-    console.log('remove add event listener.');
+    // console.log('remove add event listener.');
   }
 
 
@@ -121,7 +101,7 @@ function imageWasClicked(event){
 }//closes function imagewasClicked.
 
 
-  
+
 
 
 
@@ -136,5 +116,5 @@ function imageWasClicked(event){
 
 for(let i = 0; i < imageElements.length; i++){
   imageElements[i].addEventListener('click', imageWasClicked);
-  console.log('is this working?');
+  // console.log('is this working?');
 }
