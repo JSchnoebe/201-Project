@@ -77,10 +77,10 @@ function imageWasClicked(event){
   for(let i = 0; i < images.length; i++){
     image = images[i];
     console.log('images in for loop', image);
-    image.onclick = function() {
+    images[i].onclick = function() {
 
       console.log(image.className);
-      localStorage.setItem('pickRatingImageClick', JSON.stringify(image.className));
+      localStorage.setItem('pickRatingImageClick', JSON.stringify(images[i].className));
 
       window.location.href = this.id + 'results.html';
     };
