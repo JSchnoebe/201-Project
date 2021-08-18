@@ -31,20 +31,21 @@ function Genre(name, imgsrc, timesClicked) {
 console.log('constructor ',allGenres);
 
 
-// let chosenGenreString = localStorage.getItem('picks');
-// console.log('genre string', chosenGenreString);
+let chosenGenreString = localStorage.getItem('picks');
+console.log('genre string', chosenGenreString);
 
-// if(chosenGenreString){
-//   let arrayOfNotGenreObject = JSON.parse(chosenGenreString);
-//   console.log('if condition what is our type ', arrayOfNotGenreObject);
-//   for(let j = 0; j < arrayOfNotGenreObject.length; j++){
-//     new Genre(
-//       arrayOfNotGenreObject[j].name,
-//       arrayOfNotGenreObject[j].imgsrc,
-//       arrayOfNotGenreObject[j].timesClicked
-//     );
-//   }
-// } else {
+if(chosenGenreString){
+  let arrayOfNotGenreObject = JSON.parse(chosenGenreString);
+  console.log('if condition what is our type ', arrayOfNotGenreObject);
+  for(let j = 0; j < arrayOfNotGenreObject.length; j++){
+    new Genre(
+      arrayOfNotGenreObject[j].name,
+      arrayOfNotGenreObject[j].imgsrc,
+      arrayOfNotGenreObject[j].timesClicked
+    );
+  }
+} 
+// else {
 
 
 
@@ -65,10 +66,10 @@ new Genre('action', 'images/karate.png');
 
 function imageWasClicked(event){
   // timesClicked++;
-  console.log('something was clicked ',event);
-  console.log(imageElements);
+  console.log('something was clicked ', event);
+  console.log('image elements on click', event.srcElement.id);
 
-
+  localStorage.setItem('pickGenre', JSON.stringify(event.srcElement.id));
 
 
 
@@ -83,11 +84,12 @@ function imageWasClicked(event){
   
   for(let i = 0; i < ratingsArray.length; i++){
     let rateImage = document.createElement('img');
-    // console.log('this is new image ',rateImage);
+    console.log('xxxxxxxxx-this is new image ',rateImage);
     rateImage.setAttribute('src', 'images/' + ratingsArray[i].imageName + '.png');
     console.log('new image?',rateImage);
     rateImage.setAttribute('alt', 'Movie Ratings');
     ratingsImages.appendChild(rateImage);
+    // localStorage.setItem('pickRating', JSON.stringify(ratingsArray[i]));
 
   }
 
@@ -95,16 +97,14 @@ function imageWasClicked(event){
   let images = document.getElementsByTagName('img');
   for(let i = 0; i < images.length; i++){
     let image = images[i];
+    console.log('xxxxxxxxxx-image clicked on line 100', image);
+    
     image.onclick = function(event) {
+  
       window.location.href = this.id + 'results.html';
     };
   }
-  // let anchor = document.createElement('a');
-  // anchor.href = '#';
-  // let pg = document.createElement("img");
-  // pg.setAttribute("src", "/images/PG.png");
-  // anchor.appendChild(pg);
-  // clearInterval.appendChild(anchor);
+ 
 
 
 
@@ -116,8 +116,8 @@ function imageWasClicked(event){
 
 
   
-}//closes function imagewasClicked.
-
+//closes function imagewasClicked.
+}
 
 
 
