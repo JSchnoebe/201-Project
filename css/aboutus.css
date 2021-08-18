@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  width: 900px;
+  width: 1000px;
   margin: 0 auto;
   background-color: rgb(211, 220, 223);
   color: rgb(75, 75, 71);
@@ -30,24 +30,10 @@ h2{
     margin: 10px;
   }
 
-/* .bioOne{
-  text-align: center;
-	margin: 16px;
-}
-
-.bioTwo {
-  width: 290px;
-  text-align: center;
-  float: left;
-	margin: 16px;
-} */
-
-
 .column {
   float: left;
   padding: 30px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
+  height: 300px; 
 
 .divBio {
 width: 30%;
