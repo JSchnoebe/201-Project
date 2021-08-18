@@ -16,16 +16,18 @@ h1{
     margin:10px;
     text-align: center;
   }
-  
+hr{
+  width: 4px
+}  
 
 h2{
     font-family: 'Prompt', sans-serif;
 
     font-size: 30px;
     margin: 10px;
-<<<<<<< HEAD
+
   }
-=======
+/* =======
 div{
     text-align: center;
     background-color: rgb(92, 38, 38);
@@ -57,4 +59,4 @@ main{
 >>>>>>> d10ae7f66cf488fc4e8de44d47ee52ef18b85872
 
 }
-
+ */
