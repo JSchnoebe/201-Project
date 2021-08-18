@@ -12,44 +12,39 @@ body {
 /* Navigation */
 div a {
   padding-left: 200px;
+
 }
-/* greeting */
-.label {
+/* enter your name */
+/* .label {
     font-family: 'Prompt', sans-serif;
     font-size: 15px;
     color: #ff3401;
     text-align: right;
-  }
+  } */
   
-main {
+/* main {
     text-align: center;
-  }
-;
-  }
+  } */
+
+  
   #submit, #name {
     text-align: center;
     font-family: 'Prompt', sans-serif;
     font-size: 15px;
+    float:left
   
-    color: #ff3401;
+    color:#9fd7e0;
   
     background-color: #867e7e;
     border: 2px solid #101010;
     border-radius: 5px;
     transition-duration: 1s;
-  }
-  #submit:hover {
   
-    box-shadow: 0 0 10px #ff5e01;
+  
+    
   
   }
-  /*button */
-  .option:hover{
-    animation: shadow-pulsehover 2s infinite;
-    border-radius: 15px;
-    margin: 0px 35px;
-  }
-
+ 
 h1{
     font-family: 'Prompt', sans-serif;
     font-size: 90px;
@@ -75,4 +70,5 @@ h2{
     height: 250px;
     float:left;
     align-items: top;
+    padding-left: 2px;
   }
