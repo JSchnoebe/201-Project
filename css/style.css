@@ -13,15 +13,16 @@ body {
 div a {
   padding-left: 200px;
 }
-
+/* greeting */
 .label {
     font-family: 'Prompt', sans-serif;
     font-size: 15px;
     color: #ff3401;
+    text-align: right;
   }
   
 main {
-    text-align: right;
+    text-align: center;
   }
 ;
   }
@@ -51,7 +52,7 @@ main {
 
 h1{
     font-family: 'Prompt', sans-serif;
-    font-size: 80px;
+    font-size: 90px;
     margin:10px;
     text-align: center;
   }
@@ -71,6 +72,7 @@ h2{
   img {
     margin-top: 75px;
     width: 250px;
+    height: 250px;
     float:left;
     align-items: top;
   }
