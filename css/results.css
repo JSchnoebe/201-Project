@@ -1,3 +1,37 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3db2105acc61bf49b93944ef73737d92b48d2526
+* { 
+  box-sizing: border-box;
+}
+body {
+  width: 900px;
+  margin: 0 auto;
+  background-color: rgb(211, 220, 223);
+  color: rgb(75, 75, 71);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+;
+  }
+
+h1{
+    font-family: 'Prompt', sans-serif;
+    font-size: 60px;
+    margin:10px;
+    text-align: center;
+  }
+  
+
+h2{
+    font-family: 'Prompt', sans-serif;
+
+    font-size: 30px;
+    margin: 10px;
+<<<<<<< HEAD
+  }
+=======
 div{
     text-align: center;
     background-color: rgb(92, 38, 38);
@@ -26,3 +60,7 @@ main{
     margin-top: 30%;
     text-align: center;
 }
+>>>>>>> d10ae7f66cf488fc4e8de44d47ee52ef18b85872
+=======
+  }
+>>>>>>> 3db2105acc61bf49b93944ef73737d92b48d2526
