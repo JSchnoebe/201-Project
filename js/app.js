@@ -92,8 +92,19 @@ function imageWasClicked(event){
   }
 
 
-
-
+  let images = document.getElementsByTagName('img');
+  for(let i = 0; i < images.length; i++){
+    let image = images[i];
+    image.onclick = function(event) {
+      window.location.href = this.id + 'results.html';
+    };
+  }
+  // let anchor = document.createElement('a');
+  // anchor.href = '#';
+  // let pg = document.createElement("img");
+  // pg.setAttribute("src", "/images/PG.png");
+  // anchor.appendChild(pg);
+  // clearInterval.appendChild(anchor);
 
 
 
