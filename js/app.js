@@ -89,21 +89,21 @@ function imageWasClicked(event){
     console.log('new image?',rateImage);
     rateImage.setAttribute('alt', 'Movie Ratings');
     ratingsImages.appendChild(rateImage);
-    localStorage.setItem('pickRating', JSON.stringify(ratingsArray[i]));
+    // localStorage.setItem('pickRating', JSON.stringify(ratingsArray[i]));
 
   }
 
 
-  // let images = document.getElementsByTagName('img');
-  // for(let i = 0; i < images.length; i++){
-  //   let image = images[i];
-  //   console.log('xxxxxxxxxx-image clicked on line 100', image);
+  let images = document.getElementsByTagName('img');
+  for(let i = 0; i < images.length; i++){
+    let image = images[i];
+    console.log('xxxxxxxxxx-image clicked on line 100', image);
     
-  //   image.onclick = function(event) {
+    image.onclick = function(event) {
   
-  //     window.location.href = this.id + 'results.html';
-  //   };
-  // }
+      window.location.href = this.id + 'results.html';
+    };
+  }
  
 
 
