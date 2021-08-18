@@ -8,8 +8,12 @@ body {
   color: rgb(75, 75, 71);
   padding-bottom: 25px;
   margin-bottom: 25px;
+}
+/* Navigation */
+div a {
+  padding-left: 200px;
+}
 
-  }
 
 h1{
     font-family: 'Prompt', sans-serif;
@@ -29,6 +33,11 @@ h2{
     font-size: 30px;
     margin: 10px;
   }
+  
+img{
+  width: 
+  300px;
+}  
 
 .column {
   float: left;
