@@ -81,7 +81,7 @@ function imageWasClicked(event){
 
   // console.log('this is the section now. ', image_x);
   let ratingsImages = document.getElementById('genre');
-  
+
   for(let i = 0; i < ratingsArray.length; i++){
     let rateImage = document.createElement('img');
     console.log('xxxxxxxxx-this is new image ',rateImage);
@@ -112,12 +112,17 @@ function imageWasClicked(event){
     imageElements[i].removeEventListener('click', imageWasClicked);
     console.log('remove add event listener.');
   }
-  
+
+
+
+
+
+}//closes function imagewasClicked.
 
 
   
-//closes function imagewasClicked.
-}
+
+
 
 
 
