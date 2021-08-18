@@ -89,7 +89,8 @@ function imageWasClicked(event){
     console.log('new image?',rateImage);
     rateImage.setAttribute('alt', 'Movie Ratings');
     ratingsImages.appendChild(rateImage);
-    // localStorage.setItem('pickRating', JSON.stringify(ratingsArray[i]));
+    // localStorage.setItem('pickRating', JSON.stringify(event.srcElement.id));
+    // console.log('pickRating', pickRating);
 
   }
 
