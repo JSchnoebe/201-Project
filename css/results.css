@@ -5,19 +5,27 @@ body {
   width: 1000px;
   margin: 0 auto;
   background-color: rgb(205, 53, 33);
-  color: rgb(18, 18, 17);
+  color: rgb(205, 205, 199);
   padding-bottom: 25px;
   margin-bottom: 25px;
   }
-  div a {
-    padding-left: 200px;
+  
+
+  body { 
+    background: url(images/theater-inside.jpg); 
   }
+  main{
+    background-color: rgba(245, 245, 245, 0.657);
+  }
+
+
 
 h1{
     font-family: 'Prompt', sans-serif;
     font-size: 80px;
     margin:15px;
     text-align: center;
+    
   }
   hr {
     height: 4px;
@@ -30,6 +38,10 @@ h2 {
     font-size: 30px;
     margin: 10px;
 }
+main{
+  background-color: rgba(245, 245, 245, 0.657);
+  
+ }
 
 img {
     margin-top: 75px;
@@ -39,5 +51,28 @@ img {
     align-items: top;
     padding-left: 20px;
   }
+  
+div {
+  text-align: center;
+}
 
+ul li {
+  display: inline-block;
+  padding-left: 200px;
+}
+
+/* unvisited link */
+a:link {
+  color: rgb(57, 177, 57);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(239, 201, 10);
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
   
