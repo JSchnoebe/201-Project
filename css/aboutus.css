@@ -4,16 +4,27 @@
 body {
   width: 1000px;
   margin: 0 auto;
-  background-color: rgb(211, 220, 223);
-  color: rgb(75, 75, 71);
+  background-color: rgb(205, 53, 33);
+  
   padding-bottom: 25px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 25px;
+  background: url(/images/theater-inside.jpg ); 
+  clear: both;
+  }
+
 /* Navigation */
+header {
+  clear: both;
+  color: whitesmoke;
+}
 div a {
   padding-left: 200px;
 }
 
+
+p {
+  font-size: 22px;
+}
 h1{
     font-family: 'Prompt', sans-serif;
     font-size: 60px;
@@ -36,16 +47,18 @@ h2{
 img{
   width: 
   250px;
-  float:right;
+  /* float:right; */
   padding-bottom: 20;
   align-items: top;
-  
+  clear: both;
 }  
 
 .column {
-  float: left;
+  /* float: left; */
+  display: inline-block;
   padding: 20px;
   height: 200px;
+  
 }
 
 .divBio {
@@ -59,3 +72,24 @@ img{
   clear: both;
 }
 
+ul li {
+  clear: both;
+  display: inline-block;
+  padding-left: 200px;
+  
+}
+
+.backGround {
+ height: 750px;
+ background-color: rgba(245, 245, 245, 0.657);
+ text-align: center;
+
+}
+
+.topNav {
+  /* margin-bottom: 50px; */
+  margin-left: 140px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+}
