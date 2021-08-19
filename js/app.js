@@ -1,6 +1,15 @@
 'use strict';
 console.log('js file is connected');
 
+// let userName;
+
+// function customerName(){
+//   userName = prompt('What is your name?').toLowerCase();
+//   console.log('user input is ', userName);
+//   alert('Hello ' + userName);
+// }
+// customerName();
+
 let imageElements = document.getElementsByClassName('genre');
 // console.log('image elements', imageElements);
 
