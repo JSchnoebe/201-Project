@@ -1,75 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>MovieDex</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/reset.css">
-
-        <link rel="stylesheet" href="css/results.css">
-        <link rel="stylesheet" href="css/anchorTag.css">
-
-    </head>
-    <body>
-        <header>
-            <h1>MovieDex</h1>
-            <hr />
-            <nav>
-                
- 
-                <ul class="topNav">
-                  <li><a class="active" href="index.html">Home</a></li>
-                    <li> <a class="active" href="aboutus.html">About Us</a></li>
-                </ul>
-            </nav>
-           
-           
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>MovieDex</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/results.css">
+      <link rel="stylesheet" href="css/anchorTag.css">
+   </head>
+   <body>
+      <header>
+         <h1>MovieDex</h1>
+         <hr />
+         <nav>
+            <ul class="topNav">
+               <li><a class="active" href="index.html">Home</a></li>
+               <li> <a class="active" href="aboutus.html">About Us</a></li>
+            </ul>
+         </nav>
+         </div>
+      </header>
+      <main>
+         <section>
+            <img id="1" src="images/posters/napoleandynamite.jpg" 
+               width="400"
+               height="500" />
+            <img id="2" src="images/posters/wonka.jpg"
+               width="400"
+               height="500" />
+            <img id="3" src="images/posters/thejerk_.jpg"
+               width="400"
+               height="500" />
+         </section>
+      </main>
+      <script type="text/javascript" src="js/results.js" async defer></script>
+   </body>
+   <footer>
+      <section>
+         <form action="action_page.php" method="post">
+            <div class="container">
+               <label for="uname"><b></b></label>
+               <input type="text" placeholder="Enter Username" name="uname" required>
+               <label for="psw"><b></b></label>
+               <input type="password" placeholder="Enter Password" name="psw" required>
+               <input type="button" onclick="location.href='newpage.html';" value="Create profile"/>
             </div>
-
-        </header>
-
-       
-        <main>
-            <section>
-                <img id="1" src="images/posters/napoleandynamite.jpg" 
-                width="400"
-                height="500" />
-                <img id="2" src="images/posters/wonka.jpg"
-                width="400"
-                height="500" />
-                <img id="3" src="images/posters/thejerk_.jpg"
-                width="400"
-                height="500" />
-            </section>
-        </main>
-   
-    
-
-        <script type="text/javascript" src="js/results.js" async defer>
-       
-        </script>
-    </body>
-    <footer>
-        <section>
-            <form action="action_page.php" method="post">
-                <!-- <div class="imgcontainer">
-                  <img src="img_avatar2.png" alt="Avatar" class="avatar">
-                </div> -->
-              
-                <div class="container">
-                  <label for="uname"><b></b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
-              
-                  <label for="psw"><b></b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-                  <input type="button" onclick="location.href='newpage.html';" value="Create profile"/>
-                
-                  
-                </div>
-              </form>
-        </section>
-
-    </footer>
+         </form>
+      </section>
+   </footer>
 </html>
