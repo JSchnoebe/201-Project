@@ -38,7 +38,6 @@ if(chosenGenreString){
     new Genre(
       arrayOfNotGenreObject[j].name,
       arrayOfNotGenreObject[j].imgsrc,
-      arrayOfNotGenreObject[j].timesClicked
     );
   }
 }
@@ -50,12 +49,13 @@ new Genre('action', 'images/karate.png');
 // }
 
 // const ratings = ['PG', 'PG-13', 'R'];
+let username = prompt('What\'s your name, fellow movie lover?')
+alert('Hi ' + username + ', I hope you\'re ready to find your movie!')
+localStorage.setItem('username', JSON.stringify('username'));
 
 
 function imageWasClicked(event){
-
   localStorage.setItem('pickGenre', JSON.stringify(event.srcElement.id));
-
   let image_x = document.getElementById('genre');
   image_x.innerHTML = '';
   //add new images
@@ -76,7 +76,7 @@ function imageWasClicked(event){
   let images = document.getElementsByTagName('img');
   for(let i = 0; i < images.length; i++){
     image = images[i];
-    console.log('images in for loop', image);
+    // console.log('images in for loop', image);
     images[i].onclick = function() {
 
       console.log(image.className);

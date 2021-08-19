@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>MovieDex</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/results.css">
@@ -13,25 +13,53 @@
             <h1>MovieDex</h1>
             
             <a class="active" href="index.html">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="aboutus.html">About</a>
+            <!-- <a href="#news">News</a> -->
+            <!-- <a href="#contact">Contact</a> -->
+            <a href="aboutus.html">About Us</a>
             </div>
         </header>
+        <!-- https://www.w3schools.com/howto/howto_css_login_form.asp -->
+        <section>
+            <form action="action_page.php" method="post">
+                <!-- <div class="imgcontainer">
+                  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div> -->
+              
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                  <input type="button" onclick="location.href='newpage.html';" value="Create profile"/>
+                
+                  <!-- <button id="mybutton" type="submit">Create Profile</button> -->
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+              
+                <div class="container" style="background-color:#f1f1f1">
+                  <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+                </div>
+              </form>
+        </section>
         <main>
             <section>
-                <img id="1" src="images/posters/5yearengage_.jpg" 
+                <img id="1" src="images/posters/napoleandynamite.jpg" 
                 width="400"
                 height="500" />
-                <img id="2" src="images/posters/atomicblonde_.jpg"
+                <img id="2" src="images/posters/wonka.jpg"
                 width="400"
                 height="500" />
-                <img id="3" src="images/posters/coraline.jpg"
+                <img id="3" src="images/posters/thejerk_.jpg"
                 width="400"
                 height="500" />
             </section>
         </main>
 
-        <script src="js/results.js" async defer></script>
+        <script type="text/javascript" src="js/results.js" async defer>
+       
+        </script>
     </body>
 </html>
