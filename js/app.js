@@ -38,7 +38,6 @@ if(chosenGenreString){
     new Genre(
       arrayOfNotGenreObject[j].name,
       arrayOfNotGenreObject[j].imgsrc,
-      arrayOfNotGenreObject[j].timesClicked
     );
   }
 }
@@ -76,7 +75,7 @@ function imageWasClicked(event){
   let images = document.getElementsByTagName('img');
   for(let i = 0; i < images.length; i++){
     image = images[i];
-    console.log('images in for loop', image);
+    // console.log('images in for loop', image);
     images[i].onclick = function() {
 
       console.log(image.className);

@@ -2,24 +2,27 @@
 console.log('js file is connected');
 
 // global variables
-     let movieIndex1 = 1;
-    let movieIndex2 = 2;
-        let movieIndex3 = 3;
-        let pgcomedy = [
-            'Napolean Dynamite',
-            'not napolean dynamite'
-        ]
-
+// let movieIndex1 = 1;
+// let movieIndex2 = 2;
+// let movieIndex3 = 3;
+function Movie(mName, imgsrc){
+    this.mName = mName;
+    this.imgsrc = imgsrc;
+}
+new Movie('Napolean Dynamite', 'images/posters/napoleandynamite.jpg');
+new Movie('The Jerk', 'thejerk_.jpg');
+let pgcomedy = ['Napolean Dynamite', 'The Jerk']
 let rpicks = localStorage.getItem('pickRatingImageClick');
-console.log('pickRatingImageClick', rpicks)
+// console.log('pickRatingImageClick', rpicks)
 let picks = localStorage.getItem('pickGenre');
-console.log("pickGenre", picks);
+// console.log("pickGenre", picks);
+if (picks === '1' && rpicks === 'PG'){
+    let randomPGComedyMovie = pgcomedy[Math.floor(Math.random() * pgcomedy.length)];
 
-if (picks === '1' && rpicks === 'pg'){
-result1 = Math.floor(Math.random() * pgcomedy[i].length);
+}
 
-    
 
-console.log('movieR1', result1)}
+console.log('rando', randomPGComedyMovie);
 
-// document.getElementsByClassName('rating').style.display = 'none';
+
+
