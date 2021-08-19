@@ -8,30 +8,49 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/style.css">
    </head>
-   <body>
+   <style>
+    body { 
+              background: url(images/theater-inside.jpg); 
+              /* -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover; */
+              /* background-repeat: no-repeat; */
+     }
+     main{
+      background-color: rgba(245, 245, 245, 0.657);
+      
+     }
+     
+    </style>
       <header>
          
          <!-- </div>
          <div id='hello-div'>
             <p id='hello-message'>Hello!</p>
          </div>
-         </div>
+         </div>-->
       </header>
-      <main>
-         <form id='choose-name'>
+     
+       <!--  <form id='choose-name'>
             <label class='label' for='name'>Enter your name:</label>
             <br>
             <input type='text' id='name' name='name' placeholder='Your name here...'></input>
             <input type='submit' id='submit' name='submit' value='Submit'></input>
          </form> -->
-      </main>
+      
       <h1>MovieDex</h1>
       <hr />
-      <div class="topnav">
+      <!-- <div class="topnav">
          <a class="active" href="index.html">Home</a>
          <a class="active" href="results.html">Results</a>
          <a class="active" href="aboutus.html">About Us</a>
-      </div>
+      </div> -->
+      <ul class="topNav">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li> <a class="active" href="results.html">Results</a></li>
+          <li> <a class="active" href="aboutus.html">About Us</a></li>
+      </ul>
       </header>
       <main>
          <section id="intro">
@@ -47,9 +66,12 @@
            
             <img src="images/action.png" id="4" alt="action movies" class="genre" onclick="">
          </section>
-         <footer>
-         </footer>
+      
       </main>
+
+
+      <footer>
+      </footer>
       <script src="js/app.js" async defer></script>
    </body>
    <footer>
