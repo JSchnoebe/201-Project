@@ -20,8 +20,15 @@ if (picks === '1' && rpicks === 'PG'){
     let randomPGComedyMovie = pgcomedy[Math.floor(Math.random() * pgcomedy.length)];
 
 }
+document.getElementById("mybutton").onclick = function(){
+    location.href = "www.google.com";
+};
+let bclick = document.getElementById('needID');
 
-
+bclick.onclick = function(){
+    alert('hshj')
+    // window.location.href = this.id + 'index.html';
+}
 console.log('rando', randomPGComedyMovie);
 
 

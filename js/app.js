@@ -49,12 +49,13 @@ new Genre('action', 'images/karate.png');
 // }
 
 // const ratings = ['PG', 'PG-13', 'R'];
+let username = prompt('What\'s your name, fellow movie lover?')
+alert('Hi ' + username + ', I hope you\'re ready to find your movie!')
+localStorage.setItem('username', JSON.stringify('username'));
 
 
 function imageWasClicked(event){
-
   localStorage.setItem('pickGenre', JSON.stringify(event.srcElement.id));
-
   let image_x = document.getElementById('genre');
   image_x.innerHTML = '';
   //add new images
