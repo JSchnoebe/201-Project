@@ -8,7 +8,7 @@ body {
 	background-color: rgb(205, 53, 33);
 	padding-bottom: 25px;
 	margin-bottom: 25px;
-	background: url(/images/theater-inside.jpg );
+	background: url("/images/theater-inside.jpg" );
 	clear: both;
 }
 
