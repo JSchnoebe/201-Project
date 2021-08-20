@@ -44,10 +44,9 @@ img {
 	margin-top: 75px;
 	width: 250;
 	height: 250px;
-	/* float: left; */
-	align-items: top;
-	padding-left: 20px;
 	margin-bottom: 25px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 ul li {
@@ -65,4 +64,8 @@ main {
 	margin-bottom: 30px;
 	margin-top: 20px;
 	font-size: 20px;
+}
+
+img:hover {
+  border: red solid 10px;
 }
